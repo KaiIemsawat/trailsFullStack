@@ -34,6 +34,9 @@ const TrailSchema = new mongoose.Schema(
             min: [1, "The difficalty scale can't be below 1"],
             max: [5, "The difficalty scall can't be exceed 5"],
         },
+        img: {
+            type: String,
+        }
     },
     // { timestamps: true } will create timestamp, of course
     { timestamps: true }
