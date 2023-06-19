@@ -35,10 +35,11 @@ const DisplayAll = (props) => {
                     <p><span style={{ fontWeight: "bold" }}>Difficulty : </span>{eachTrail.difficulty}</p>
                     {
                         eachTrail.img ? 
-                        <img src={eachTrail.img} style={{width:"30%"}}/>
+                        <img src={eachTrail.img} style={{width:"30%"}} alt={`${eachTrail.name} image`}/>
                         :
                         null
                     }
+                    <Link className="btn btn-primary" to={`/displayOneTrail/${eachTrail._id}`}>Details</Link>
                 </div>
             ))}
         </div>
